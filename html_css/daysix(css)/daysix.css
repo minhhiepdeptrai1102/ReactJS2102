@@ -1,0 +1,42 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    
+}
+
+/* thay đổi trạng thái khi thay đổi kích cỡ màn hình */
+@media only all and (min-width: 650px) and (max-width: 850px)   {
+    div {
+        background-color: blue;
+    }
+}
+
+/* tạo border khi màn hình kích thước width nhỏ nhất là 950px */
+@media only all and (min-width: 950px)   {
+    div {
+        border: 3px solid red;
+    }
+}
+
+/* tạo dotted khi màn hình kích thước tối đa là 550px */
+@media only all and (max-width: 550px)   {
+    div {
+        border: 3px dotted green;
+    }
+}
+
+.block {
+    top: 40px;
+    left: 40px;
+}
+
+.relative {
+    /* relative: di chuyển vị trí thể hiện trên browser, vị trí gốc không thay đổi. dùng chỉ top - left hoặc bottom - right */
+    position: relative;
+}
+
+/* absolute: di chuyển vị trí. nhận vị trí gốc là vị trí cha mà thằng cha đó đã khai báo position */
+.absolute {
+    position: absolute;
+}

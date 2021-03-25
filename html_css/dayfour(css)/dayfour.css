@@ -1,0 +1,105 @@
+/* div 1 */
+/* p {
+    color: red;
+} */
+
+/* .this~.is {
+    color: red;
+} */
+
+/* .this+.is {
+    color: red;
+} */
+
+/* specificities */
+/* #container p.this {
+    color: red;
+} */
+
+/* .container #p1.this {
+    color: blue;
+} */
+
+/* div 2 */
+/* .red-color {
+    color: red;
+}
+
+.container div p:first-child {
+    color: blue;
+}
+
+.container div p:nth-child(3) {
+    color: green;
+}
+
+.container div p:nth-last-child(3) {
+    color: orange;
+}
+
+.container div p:last-child {
+    color: yellow  ;
+} */
+
+/* .container div p:only-child {
+    color: pink;
+} */
+
+/* .username:focus {
+    width: 250px;
+}
+
+.gender:checked span {
+    color: red;
+} */
+
+/* chuyển màu theo style khi đã nhấp vào link đó rồi */
+/* a:visited {
+    color:pink;
+} */
+
+/* a:link {
+    color: green;
+} */
+
+/* chuyển màu theo style khi trỏ chuột vào thẻ đó */
+/* a:hover {
+    color: aqua;
+} */
+
+/* chỉnh sửa size chữ đầu tiên của đoạn */
+/* .para::first-letter {
+    font-size: 50px;
+}
+
+/* chỉnh sửa màu dòng đầu tiên của đoạn */
+/* .para::first-line {
+    color: red;
+} */
+
+/* tô đậm đoạn trỏ chuột với background và màu chữ theo sytle */
+/* .para::selection {
+    background-color: black;
+    color: blue;
+}
+
+.para::after {
+    display: block;
+    content: "run";
+}
+
+.para::before {
+    display: block;
+    content: "stop";
+} */
+
+.container {
+    background-color: pink;
+    width: 250px;
+    height: 350px;
+}
+
+.black div p {
+    font-size: 0.5em;
+}
+

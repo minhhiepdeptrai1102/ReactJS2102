@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daythree</title>
+    <!-- cách 1: External: thẻ bên ngoài -->
+    <link rel="stylesheet" href="daythree.css">
+    <!-- cách 2: internal -->
+    <!-- 
+        h2 {
+            color: yellow
+        }
+     -->
+    
+     <style>
+         #p3 {
+             color: green;
+         }
+         p.yellow-color {
+            color: yellow;
+         }
+         .big-size {
+             font-size: 50px;
+         }
+
+         /* phân cấp cho mọi thẻ h2 trong thẻ article */
+         article h2 {
+             color: red;
+         }
+
+         /* phân cấp cho thẻ h2 là con của thẻ article */
+         article>h2 { 
+             color: green;
+         }
+
+         /* phân cấp cho thẻ h2 nằm trong thẻ div trong thẻ article */
+         article>div>h2 {
+             color: pink;
+         }
+
+         nav#orange-color {
+             color: orange;
+         }
+
+         nav#gray-color {
+             color: gray;
+         }
+
+     </style>
+</head>
+<!-- có 3 cách stlye css: -->
+<body>
+    <!-- cách 3: inline -->
+    <!-- 
+        <h2 style="color: purple">text</h2>
+     -->
+    <h2>Day Three</h2>
+    <article>
+    <h2>react js</h2>
+        <div>
+            <h2>cháu h2</h2>
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem officia eveniet eius nam suscipit enim nostrum, laudantium eligendi! Dolores nulla corrupti reiciendis, quo quae libero soluta laudantium maiores atque.</p>
+    </article>
+    <section>
+        <h2>phake</h2>
+    </section>
+    <h3 class="yellow-color">h3</h3>
+    <p class="yellow-color big-size">p1</p>
+    <p>p2</p>
+    <p id="p3">p3</p>
+    <p>p4</p>
+
+    <!-- thứ tự ưu tiên id-class-... -->
+    <nav id="orange-color" class="gray-color">Graphics</nav>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    Vài điều chân thành không may lỡ thời
+    <br>
+    <a href="/dayone/index.html">index</a>
+    <br>
+    <!-- nell link(bookmarks): trỏ web page vào một tag được đặt ID duy nhất-->
+    <a id="about" href="/aboutme.html">About</a>        <br>
+    <p id="about"><mark>about:</mark> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cum, debitis nisi nulla dolores corporis molestias minima. Nisi quisquam a, alias quis voluptate neque cupiditate illo, debitis qui quaerat numquam!</p>
+
+    <!-- tag show data -->
+    <!-- unorder list: show list chưa sắp xếp thứ tự -->
+    <ul>
+        <li>Hiep</li>
+        <li>Nhat</li>
+        <li>Duong</li>
+    </ul>
+    <ol type="I">
+        <li>Nhat</li>
+        <li>Hiep</li>
+        <li>Duong</li>
+    </ol>
+
+    <!-- table: tr(table row): khai báo dòng; td(table data): khai báo dữ liệu; th(table heart): khai báo head-->
+    <!-- cú pháp gõ nhanh table: tr>td*4 -->
+    <table>
+        <caption>Class info</caption>
+        <tr>
+            <th colspan="4">Information</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Add</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Hiep</td>
+            <td>22</td>
+            <td rowspan="3">Ha Noi</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Nhat</td>
+            <td>7</td>
+            <!-- <td>Ha Noi</td> -->
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Duong</td>
+            <td>2</td>
+            <!-- <td>Ha Noi</td> -->
+            <td>Male</td>
+        </tr>
+    </table>
+
+    <!-- rowspan: gộp dòng thuộc tính khi các đối tượng có chung thuộc tính-->
+    <!-- colspan: gộp cột -->
+    <!-- caption: tiêu đề bảng -->
+
+    <header>
+        Header
+    </header>
+    <section>
+        <article>
+            <h2>Tiêu Đề</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia delectus numquam nihil ipsam inventore, quo impedit aut, odit, odio eligendi sapiente quasi veniam iusto. Cum cumque dolorum ipsam assumenda.</p>
+        </article>
+        <nav>Navigation</nav>
+    </section>
+    <footer>Footer</footer>
+    <br>
+
+    <!-- form -->
+    <!-- 2 phương thức POST và GET: GET không bảo mật data. POST bảo mật data -->
+    <form action="login.php" method="POST">
+        <label for="username">username</label>
+        <input type="username" name="username" placeholder="Enter username">
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" placeholder="Enter password">
+        <br>
+        <input type="number" min="0" max="25" name="number" placeholder="number">
+        <input type="email" name="email" placeholder="email">
+        <select name="month" id="month">
+
+            <option value="">Tháng</option>
+            <optgroup label="spring">
+                <option value="1">Tháng 1</option>
+                <option value="2">Tháng 2</option>
+                <option value="3">Tháng 3</option>
+            </optgroup>
+
+            <optgroup label="summer">
+                <option value="5">Tháng 5</option>
+                <option value="6">Tháng 6</option>
+                <option value="7">Tháng 7</option>
+            </optgroup>
+            
+            <optgroup label="winter">
+                <option value="10">Tháng 10</option>
+            </optgroup>
+        </select>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="checkbox" id="policy" name="policy">
+        <label for="policy">i agree with your policy</label>
+        <input type="submit" value="login" />
+    </form>
+
+    <!-- audio video graphics. có thể bỏ auto play -->
+    <audio controls autoplay src="/daytwo/mp3/Gạt Đi Nước Mắt (Asia Song Festival 2016) - Noo Phước Thịnh.mp3"></audio>
+    <video controls autoplay src=""></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i9_ZpPDtBCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- graphics -->
+    <canvas></canvas>
+</body>
+</html>

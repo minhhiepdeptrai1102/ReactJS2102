@@ -1,0 +1,148 @@
+/* p {
+    color: red;
+    font-family: 'Courier New', Courier, monospace  ;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-weight: 200px;
+} */
+
+/*
+p {
+    /* lề phải */
+    /* direction: ltr; */
+    
+    /* khoảng cách các chữ cái */
+    /* letter-spacing: 10px; */
+
+    /* khoảng cách các từ */
+    /* word-spacing: 20px; */
+
+    /* khoảng cách với lề */
+    /* text-indent: 10px; */
+
+    /* vị trí của nội dung */
+    /* text-align: center/left/right; */
+    /* text-align: center; */
+
+    /* trang trí */
+    /* text-decoration: underline; */
+
+    /* tự động viết hoa hết */
+    /* text-transform: uppercase; */
+
+    /* không cho phép nội dung xuống hàng */
+    /* white-space: nowrap; */
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+}
+
+.bg--yellow {
+    background-color: yellow;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-scroll {
+    overflow: auto ;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 5px pink;
+}
+
+.btn {
+    box-shadow: 5px 5px 5px purple;
+}
+
+/* để import hình ảnh được full màn hình */
+/* body {
+    padding: 0px;
+    margin: 0px;
+} */
+
+/* reset browser */
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+.bg-container {
+    width: 100%;
+    height: 400px;
+    background-image: url("./img5/bg.jpg");
+    /* background-size: 100%; */
+
+    /* lặp lại ảnh khi kích cỡ nhỏ hơn cấu hình cho đến khi full cấu hình */
+    background-size: 300px;
+
+    /* bỏ lặp */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position: top right; */
+    /* background-position: top left; */
+
+    /* chỉnh sửa vị trí */
+    /* background-position: 100px 50px; */
+
+    /* cuộn nội dung lên ảnh */
+    background-attachment: fixed; 
+}
+
+/* border: bao bọc element */
+.border {
+    margin: 40px;
+
+    /* nét liền */
+    /* border: 2px solid green; */
+    /* nét đứt */
+    border: 2px dotted red;
+    border-bottom: 2px solid yellow;
+    border-top-color: blue
+}
+
+/* cấu hình element */
+h2 {
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.a1 {
+    display: block;
+}
+
+.h2 {
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+
+/* chia bố cục(đẩy nội dung đi đâu đó) -- float */
+.div1 {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+.div2 {
+    display: inline-block;
+    width: 70%;
+    float: right;
+    background-color: pink;
+}
+
+.div3 {
+    float: left;
+}
